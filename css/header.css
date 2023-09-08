@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerNav ul {
+  display: flex;
+}
+
+.navItem {
+  margin-right: 35px;
+  font-weight: 400;
+  color: #B8BECD;
+}
+
+.activeNavItem {
+  color: #202336;
+  font-weight: 500;
+  margin-right: 35px;
+}
+
+.registerButton {
+  height: 44px;
+  width: 132px;
+  border-radius: 8px;
+  border: 0;
+  background: #FB8F1D;
+  margin-left: 15px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.loginButton {
+  height: 44px;
+  width: 132px;
+  border-radius: 8px;
+  border: 1px solid #FB8F1D;
+  color: #FB8F1D;
+  font-size: 15px;
+}

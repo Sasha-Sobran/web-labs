@@ -1,0 +1,35 @@
+.heroSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.heroInner {
+  width: 450 ;
+  height: 600px;
+  margin-left: 180px;
+  margin-top: 301px;
+  margin-left: 40px;
+}
+
+.heroDescription {
+  font-size: 17px;
+  font-weight: 300;
+  font-family: Muli;
+  color: #7D7987;
+  line-height: 30px;
+}
+
+.heroButton {
+  width: 164px;
+  height: 48px;
+  border-radius: 8px;
+  background: #FB8F1D;
+  margin-top: 40px;
+  color: #FFF;
+}
+
+.heroImage {
+  width: 599px;
+  height: 542px;
+  padding-top: 146px;
+}
