@@ -1,0 +1,32 @@
+footer {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F8F8;
+    justify-content: space-around;
+}
+
+.topFooter {
+    width: 1220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 45px;
+    margin: 20px auto;
+}
+
+.separator {
+    height: 0.6px;
+    background-color: #C4C4C4;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.bottomFooter {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}

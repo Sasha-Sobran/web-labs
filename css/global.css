@@ -1,0 +1,28 @@
+body {
+  font-family: "Mulish", "Inter", "Playfair Display";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  display: block;
+}
+
+button {
+  border: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+}
+
+.title {
+  width: 481px;
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+}
