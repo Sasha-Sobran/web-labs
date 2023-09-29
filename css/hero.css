@@ -1,35 +1,65 @@
-.heroSection {
+.hero {
+  padding-left: 100px;
+}
+
+.hero__container {
+  margin-bottom: 70px;
   display: flex;
   flex-direction: row;
 }
 
-.heroInner {
-  width: 450 ;
-  height: 600px;
-  margin-left: 180px;
-  margin-top: 301px;
-  margin-left: 40px;
+.hero__inner {
+  width: 480px;
+  padding-top: 300px;
 }
 
-.heroDescription {
+@media screen and (max-width: 768px) {
+  .hero__inner {
+    margin: 0 auto;
+  }
+}
+
+.hero__paragraph {
+  font-family: Mulish;
   font-size: 17px;
   font-weight: 300;
-  font-family: Muli;
-  color: #7D7987;
   line-height: 30px;
+  letter-spacing: 0em;
 }
 
-.heroButton {
-  width: 164px;
-  height: 48px;
-  border-radius: 8px;
-  background: #FB8F1D;
-  margin-top: 40px;
-  color: #FFF;
+.hero__button {
+  background-color: #fb8f1d;
 }
 
-.heroImage {
+.hero_img {
   width: 599px;
   height: 542px;
   padding-top: 146px;
+}
+
+@media screen and (max-width: 1240px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__inner {
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .hero_img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 20px;
+  }
 }

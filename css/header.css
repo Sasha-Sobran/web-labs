@@ -1,41 +1,132 @@
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 27px;
 }
 
-.headerNav ul {
-  display: flex;
+.header_menu {
+  display: none;
+  cursor: pointer;
 }
 
-.navItem {
-  margin-right: 35px;
-  font-weight: 400;
-  color: #B8BECD;
+.header_menu img {
+  width: 40px;
+  height: 40px;
 }
 
-.activeNavItem {
-  color: #202336;
-  font-weight: 500;
-  margin-right: 35px;
+.header__nav-item {
+  margin-right: 34px;
+  color: #b8becd;
 }
 
-.registerButton {
-  height: 44px;
-  width: 132px;
-  border-radius: 8px;
-  border: 0;
-  background: #FB8F1D;
-  margin-left: 15px;
+.login {
+  margin-right: 18px;
+  color: #fb8f1d;
+  font-size: 15px;
+  border: 1px solid #fb8f1d;
+}
+
+.login:hover {
   color: #fff;
-  font-size: 15px;
+  background-color: #fb8f1d;
+  transform: scale(1.05);
 }
 
-.loginButton {
-  height: 44px;
-  width: 132px;
-  border-radius: 8px;
-  border: 1px solid #FB8F1D;
-  color: #FB8F1D;
-  font-size: 15px;
+.register {
+  background-color: #fb8f1d;
+  font: Inter, 15px;
+}
+
+.register:hover {
+  color: #fb8f1d;
+  background-color: #fff;
+  border: 1px solid #fb8f1d
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.logo.pulse {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@media screen and (max-width: 1240px) {
+  .header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    margin-top: 0;
+    background-color: #ffffff;
+    justify-content: space-between;
+    z-index: 10;
+  }
+
+  .header_menu {
+    display: flex;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .header__nav {
+    background: #ffffff;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    clip-path: circle(0 at top left);
+    transition: clip-path 0.4s ease-in;
+    display: block;
+  }
+
+  .header__nav.open {
+    clip-path: circle(1000px at top);
+    transition: clip-path 0.4s ease-out;
+  }
+
+  .header__nav ul {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .header__nav .header__nav-item {
+    margin-right: 0;
+    padding-top: 10vh;
+    flex: 1;
+  }
+
+  .header__nav a {
+    font-weight: 500;
+    display: block;
+    font-size: 32px;
+  }
+
+  .buttons {
+    position: center;
+    left: 0;
+    right: 0;
+  }
+
+  .register {
+    display: none;
+  }
+
+  .login {
+    display: none;
+  }
 }
